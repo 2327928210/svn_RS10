@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eee"
+    tools:context="com.haoke.rs10.fragment.Fragment_2">
+
+    <RelativeLayout
+        android:id="@+id/title_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y_45"
+        android:background="@color/main_color">
+
+        <RelativeLayout
+            android:id="@+id/title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x_20"
+            android:padding="@dimen/x_2"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/ima_left"
+                android:padding="@dimen/x_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_back_n"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_center_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/main_2"
+                android:textColor="#fff"
+                android:textSize="@dimen/y_22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/x_2"
+            android:layout_marginRight="@dimen/x_20">
+
+            <ImageView
+                android:id="@+id/ima_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@mipmap/home_icon_search_p" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/video_rel"
+        android:layout_marginTop="@dimen/x_4"
+        android:layout_marginLeft="@dimen/x_2"
+        android:layout_marginRight="@dimen/x_2"
+        android:layout_below="@+id/title_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/x_4"
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/video_rel_2"
+        android:layout_below="@+id/video_rel"
+        android:layout_marginTop="@dimen/x_4"
+        android:layout_marginLeft="@dimen/x_2"
+        android:layout_marginRight="@dimen/x_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/x_4"
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/video_rel_3"
+        android:layout_below="@+id/video_rel_2"
+        android:layout_marginTop="@dimen/x_4"
+        android:layout_marginLeft="@dimen/x_2"
+        android:layout_marginRight="@dimen/x_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/x_4"
+            android:layout_width="@dimen/x_236"
+            android:layout_height="@dimen/x_133"
+            android:background="#000">
+
+            <com.haoke.rs10.ijkplayer.media.IjkVideoView
+                android:id="@+id/video_view6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></com.haoke.rs10.ijkplayer.media.IjkVideoView>
+
+            <TableLayout
+                android:id="@+id/hud_view6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/ijk_transparent_dark"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在缓冲..."
+                android:textColor="#fff"
+                android:textSize="@dimen/x_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#282d30</color>
+    <color name="color_f00">#f00</color>
+    <color name="color_fff">#fff</color>
+    <color name="color_eee">#eee</color>
+    <color name="color_ddd">#ddd</color>
+    <color name="color_ccc">#ccc</color>
+    <color name="color_bbb">#bbb</color>
+    <color name="color_aaa">#aaa</color>
+    <color name="color_999">#999</color>
+    <color name="color_777">#777</color>
+    <color name="color_666">#666</color>
+    <color name="color_333">#333</color>
+    <color name="color_000">#000</color>
+    <color name="color_connect">#19E9F3</color>
+    <color name="blue_n">#1eafff</color>
+    <color name="blue_p">#188CCC</color>
+    <!-- 电子围栏 -->
+    <color name="text_select_color">#552a8efe</color>
+
+    <!-- 纯色 -->
+    <color name="transparent">#0FFF</color>
+    <color name="transparent_6">#6000</color>
+    <color name="transparent_8">#8000</color>
+    <color name="white">#FFF</color>
+    <color name="white_a">#aFFF</color>
+    <color name="white_3">#3FFF</color>
+    <color name="gray_6">#666</color>
+    <color name="gray_9">#999</color>
+    <color name="gray_a">#aaa</color>
+    <color name="gray_b">#BBB</color>
+    <color name="gray_ef">#f0f0f0</color>
+    <color name="green">#53D96D</color>
+    <color name="red">#f00</color>
+    <color name="red_n">#ff4f51</color>
+    <color name="red_p">#CC3F41</color>
+    <color name="black">#000</color>
+    <color name="text_black">#7A7A7A</color>
+
+    <color name="main_color">#50cbff</color>
+    <!-- 二维码 -->
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="gray">#ededed</color>
+
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+
+    <color name="controller_bg">#80000000</color>
+    <color name="controller_tv_color">#ffffff</color>
+    <color name="bg">#ffffff</color>
+</resources>

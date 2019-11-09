@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <include layout="@layout/layout_titlebar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x_35"
+        android:paddingRight="@dimen/x_35"
+        android:paddingTop="@dimen/y_10" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/location_info_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/x_25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x_25"
+            android:layout_marginTop="@dimen/x_25" >
+
+            <EditText
+                android:id="@+id/ed_mac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="@dimen/x_10"
+                android:textSize="@dimen/x_25" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_two"
+                android:layout_width="@dimen/x_80"
+                android:layout_height="@dimen/x_50"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/flowdetails_qrcode"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/location_info_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/x_25" />
+
+            <TextView
+                android:id="@+id/tv_device"
+                style="@style/location_info_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/x_25" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_bonded"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y_60"
+            android:layout_marginTop="@dimen/y_50"
+            android:background="@drawable/login_button"
+            android:text="@string/binding"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

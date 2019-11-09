@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.haoke.rs10.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/bottom_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y_70"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_fff">
+
+        <View
+            android:id="@+id/bottom_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y_1"
+            android:background="@color/color_ddd" />
+
+        <RelativeLayout
+            android:id="@+id/main_center_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bottom_view_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x_15"
+            android:layout_marginRight="@dimen/x_15">
+
+            <com.haoke.rs10.views.RichText
+                android:id="@+id/rt_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                app:icon_height="@dimen/y_55"
+                app:icon_src_normal="@mipmap/bottom_center"
+                app:icon_src_pressed="@mipmap/changjiang_connect"
+                app:icon_src_unable="@mipmap/changjiang_connect"
+                app:icon_width="@dimen/y_55"
+                app:text_color_pressed="@color/main_color"
+                app:text_color_unable="@color/main_color" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y_61"
+            android:layout_below="@+id/bottom_view_line"
+            android:layout_marginTop="@dimen/x_3"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/main_center_rel">
+
+            <com.haoke.rs10.views.RichText
+                android:id="@+id/rt_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/x_3"
+                android:gravity="center"
+                android:text="@string/main_1"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/x_16"
+                app:icon_direction="top"
+                app:icon_height="@dimen/y_26"
+                app:icon_src_normal="@mipmap/changjiang_noconnect"
+                app:icon_src_pressed="@mipmap/one_p"
+                app:icon_src_unable="@mipmap/one_p"
+                app:icon_width="@dimen/y_26"
+                app:text_color_pressed="@color/main_color"
+                app:text_color_unable="@color/main_color" />
+
+            <com.haoke.rs10.views.RichText
+                android:id="@+id/rt_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/x_3"
+                android:gravity="center"
+                android:text="@string/main_2"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/x_16"
+                app:icon_direction="top"
+                app:icon_height="@dimen/y_24"
+                app:icon_src_normal="@mipmap/two_n"
+                app:icon_src_pressed="@mipmap/changjiang_connect"
+                app:icon_src_unable="@mipmap/changjiang_connect"
+                app:icon_width="@dimen/y_26"
+                app:text_color_pressed="@color/main_color"
+                app:text_color_unable="@color/main_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/main_right_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y_60"
+            android:layout_below="@+id/bottom_view_line"
+            android:layout_marginTop="@dimen/x_3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/main_center_rel">
+
+            <com.haoke.rs10.views.RichText
+                android:id="@+id/rt_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/x_3"
+                android:gravity="center"
+                android:text="@string/main_3"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/x_16"
+                app:icon_direction="top"
+                app:icon_height="@dimen/y_22"
+                app:icon_src_normal="@mipmap/three_n"
+                app:icon_src_pressed="@mipmap/changjiang_connect"
+                app:icon_src_unable="@mipmap/changjiang_connect"
+                app:icon_width="@dimen/y_26"
+                app:text_color_pressed="@color/main_color"
+                app:text_color_unable="@color/main_color" />
+
+            <com.haoke.rs10.views.RichText
+                android:id="@+id/rt_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/x_3"
+                android:gravity="center"
+                android:text="@string/main_4"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/x_16"
+                app:icon_direction="top"
+                app:icon_height="@dimen/y_26"
+                app:icon_src_normal="@mipmap/four_n"
+                app:icon_src_pressed="@mipmap/changjiang_connect"
+                app:icon_src_unable="@mipmap/changjiang_connect"
+                app:icon_width="@dimen/y_26"
+                app:text_color_pressed="@color/main_color"
+                app:text_color_unable="@color/main_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.haoke.rs10.views.MyViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_rel"></com.haoke.rs10.views.MyViewPager>
+    <FrameLayout
+        android:id="@+id/main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_rel"></FrameLayout>
+</RelativeLayout>

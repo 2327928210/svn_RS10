@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 倾斜度 -->
+    <gradient
+        android:angle="180"
+        android:endColor="@color/white"
+        android:startColor="@color/white" />
+
+    <!-- 线宽度 -->
+    <stroke
+        android:width="1px"
+        android:color="@color/gray_6" />
+
+    <!-- <solid android:color="#00ff00ff" /> -->
+
+
+    <!-- 圆角度 -->
+    <corners
+        android:bottomLeftRadius="10px"
+        android:bottomRightRadius="10px"
+        android:topLeftRadius="10px"
+        android:topRightRadius="10px" />
+
+</shape>
